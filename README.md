@@ -21,4 +21,6 @@ Run Cypress-> terminal ไปที่ forder ที่สร้าง ->node_mo
 คำสั่ง CMD Screenshot&Recording
 
      ->cypress run    #จะRun ทุก Folder&File และ Screenshot&Recording ทั้งหมด
+     ->cypress run --spec "cypress\integration\LearningFirst\"    #จะ run เฉพาะ folder และทุก Test file ใน folder นั้
+     ->cypress run --spec "cypress\integration\LearningFirst\firsttest.js"    #จะ run เฉพาะ Test file ที่เราต้องการ
 
