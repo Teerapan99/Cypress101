@@ -2,7 +2,7 @@
 
 ติดตั้ง Node js & npm
 
-set NODE_HOME avrible
+set NODE_HOME varible
 
 Create Folder for Cypress
 
