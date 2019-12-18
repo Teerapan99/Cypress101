@@ -16,6 +16,31 @@ Forderต่างๆ
         screenshots ->เก็บหน้าจอ
         support
         videos ->เก็บวิดีโอ
+##โครงสร้าง####
+ 
+         describe() คือการ Define Test Scenario ของเราว่าต้องการจะเทสอะไร (What to test)
+         beforeEach() คือการ Define Test Setup Steps ที่ต้องทำทุกครั้งก่อนรัน Test Case ทุกข้อ
+         it() คือการ Define Test Step ว่าใน Test Scenario ของเรานั้นมีวิธีการเทสอย่างไร (How to test)
+ 
+ 
+/// <reference types="Cypress" />
+
+describe('Cypress Test', () => {
+
+    beforeEach(() => {
+    
+        cy.visit('ลิ้งที่ต้องการเปิด')
+    })
+
+    it('should has text \'npm install cypress\'', () => {
+        cy.get('Locatorที่เราต้องการ').should('contain', 'npm install cypress')
+    })
+})
+
+
+
+
+
 Run Cypress-> terminal ไปที่ forder ที่สร้าง ->node_modules\.bin\cypress open
 
 คำสั่ง CMD Screenshot&Recording
